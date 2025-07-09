@@ -71,7 +71,7 @@ def extract_and_predict(image, binary, labels, label_id, model): #roi çıkarım
 
 def main():
     model = load_model("model.pkl")
-    image, binary = preprocess("deneme1.png")
+    image, binary = preprocess("plaka.png")
     labels, label_id = bfs_label(binary)
     predicted_text, output_img = extract_and_predict(image.copy(), binary, labels, label_id, model)
 
